@@ -56,7 +56,7 @@ markerId      : number
 Product providers endpoint (Oximeters, flow meters, concentrators, etc)
 
 GET -> /api/products
-POST -> /api/product
+POST -> /api/produc
 PUT -> /api/product/:uniqueId
 ```
 
