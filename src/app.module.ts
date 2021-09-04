@@ -4,6 +4,7 @@ import {MongooseModule} from '@nestjs/mongoose';
 import {AppController} from './app.controller';
 import {AppService} from './app.service';
 import {ProductModule} from './product/product.module';
+import {MarkerModule} from './marker/marker.module';
 
 @Module({
   imports: [
@@ -11,7 +12,8 @@ import {ProductModule} from './product/product.module';
       envFilePath: '.env'
     }),
     MongooseModule.forRoot(process.env.DATABASE_CONFIG),
-    ProductModule
+    ProductModule,
+    MarkerModule
   ],
   controllers: [AppController],
   providers: [AppService]
