@@ -11,17 +11,17 @@
 ```
 Oxygen ရောင်း/ဖြန့်/ ငှား တဲ့နေရာတွေရဲ့ endpoint
 
-GET -> /api/markers
-GET -> /api/markers/active
-POST -> /api/marker
-PUT -> /api/marker/:markerId
+GET -> /markers
+GET -> /markers/active
+POST -> /marker
+PUT -> /marker/:markerId
 ```
 
 #### Restful API docs နဲ့ Marker တွေရဲ့ prop Types
 
 ###### GET
 
-အဓိက data ယူဖို့ point 2 ခုရှိပါတယ် ဒါက oxygen providers တွေရဲ့ endpoint ပါ. Endpoint အကုန်ကိုလိုချင်ရင်တော့ /​api/markers ပါ. Active ဖြစ်နေတဲ့ marker တွေပဲလိုချင်ရင်တော့ /api/markers/active ပါ. ဘာကွာလဲဆိုတော့ ကျနော်တို့ က နေရာတိုင်းကိုအချိန်တိုင်း checkup ဝင်ပေးနေပြီး oxygen မရတော့ရင် active ကို 0 ထားပြီး ရသေးရင် active ကို 1 ထားပေးထားတာပါ.
+အဓိက data ယူဖို့ point 2 ခုရှိပါတယ် ဒါက oxygen providers တွေရဲ့ endpoint ပါ. Endpoint အကုန်ကိုလိုချင်ရင်တော့ /markers ပါ. Active ဖြစ်နေတဲ့ marker တွေပဲလိုချင်ရင်တော့ markers/active ပါ. ဘာကွာလဲဆိုတော့ ကျနော်တို့ က နေရာတိုင်းကိုအချိန်တိုင်း checkup ဝင်ပေးနေပြီး oxygen မရတော့ရင် active ကို 0 ထားပြီး ရသေးရင် active ကို 1 ထားပေးထားတာပါ.
 
 ###### POST
 
@@ -55,9 +55,9 @@ markerId      : number
 ```
 Product providers endpoint (Oximeters, flow meters, concentrators, etc)
 
-GET -> /api/product
-POST -> /api/product
-PUT -> /api/product/:uniqueId
+GET -> product
+POST -> product
+PUT -> product/:uniqueId
 ```
 
 #### Restful API docs နဲ့ Product တွေရဲ့ prop Types

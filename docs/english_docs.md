@@ -11,17 +11,17 @@ Main URL : `ox2home-api.herokuapp.com`
 ```
 Oxygen providers endpoint
 
-GET -> /api/markers
-GET -> /api/markers/active
-POST -> /api/marker
-PUT -> /api/marker/:markerId
+GET -> /markers
+GET -> /markers/active
+POST -> /marker
+PUT -> /marker/:markerId
 ```
 
 #### Notes on Restful Operations and Marker prop types
 
 ###### GET
 
-You can fetch the data from 2 api endpoints, one is getting all markers from `/api/markers` and another one is only **active** markers at `/api/markers/active`. Active markers will have `active : 1` and the one that are not active will have `active : 0`.
+You can fetch the data from 2 api endpoints, one is getting all markers from `/markers` and another one is only **active** markers at `/markers/active`. Active markers will have `active : 1` and the one that are not active will have `active : 0`.
 
 ###### POST
 
@@ -55,9 +55,9 @@ markerId      : number
 ```
 Product providers endpoint (Oximeters, flow meters, concentrators, etc)
 
-GET -> /api/products
-POST -> /api/produc
-PUT -> /api/product/:uniqueId
+GET -> /products
+POST -> /produc
+PUT -> /product/:uniqueId
 ```
 
 #### Notes on Restful Operations and Product prop types
