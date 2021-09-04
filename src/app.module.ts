@@ -3,7 +3,6 @@ import {ConfigModule} from '@nestjs/config';
 import {MongooseModule} from '@nestjs/mongoose';
 import {AppController} from './app.controller';
 import {AppService} from './app.service';
-import {MarkerModule} from './marker/marker.module';
 import {ProductModule} from './product/product.module';
 
 @Module({
@@ -12,7 +11,6 @@ import {ProductModule} from './product/product.module';
       envFilePath: '.env'
     }),
     MongooseModule.forRoot(process.env.DATABASE_CONFIG),
-    MarkerModule,
     ProductModule
   ],
   controllers: [AppController],
